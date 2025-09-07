@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  mainbot:
+    build: ./
+    container_name: mainbot
+    environment:
+      - BOT_TOKEN=XXX
+      - BOT_CLIENT_ID=XXX
+    ports:
+      - 5000:5000
+    volumes:
+      - /usr/app/src:/src
+networks: {}
